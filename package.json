@@ -1,0 +1,22 @@
+{
+  "name": "delta",
+  "version": "1.0.0",
+  "description": "Hosted payload groundstation GUI software",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanislascollege-CanSat/Delta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanislascollege-CanSat/Delta/issues"
+  },
+  "homepage": "https://github.com/Stanislascollege-CanSat/Delta#readme",
+  "devDependencies": {
+    "electron": "^2.0.4"
+  }
+}
