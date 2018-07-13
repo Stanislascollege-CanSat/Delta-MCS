@@ -15,6 +15,7 @@ function createWindow () {
     	width: 800,
     	height: 600,
     	center: true,
+        frame: false,
     	resizeable: true,
     	movable: true,
     	icon: path.join(__dirname + ''),
