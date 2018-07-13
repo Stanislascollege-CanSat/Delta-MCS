@@ -1,10 +1,10 @@
 {
   "name": "delta",
   "version": "1.0.0",
-  "description": "Hosted payload groundstation GUI software",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "url": "https://github.com/Stanislascollege-CanSat/Delta/issues"
   },
   "homepage": "https://github.com/Stanislascollege-CanSat/Delta#readme",
-  "devDependencies": {
-    "electron": "^2.0.4"
+  "dependencies": {
+    "serialport": "^6.2.1"
   }
 }
