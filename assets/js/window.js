@@ -2,15 +2,15 @@
 
 // WindowCaption button events.
 	// Close window
-	ById('windowClose').addEventListener('click', () => { 
+	byId('windowClose').addEventListener('click', () => { 
 		mainWindow.close()
 	})
 	// Minimize window
-	ById('windowMinimize').addEventListener('click', () => {
+	byId('windowMinimize').addEventListener('click', () => {
 		mainWindow.minimize()
 	})
 	// Maximize window
-	ById('windowMaximize').addEventListener('click', () => {
+	byId('windowMaximize').addEventListener('click', () => {
 		if (!mainWindow.isMaximized()) {
 			mainWindow.maximize()
 		} else {

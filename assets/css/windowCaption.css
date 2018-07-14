@@ -55,3 +55,39 @@
 	background: rgba(0,0,0,0.25);
 	border-radius: 100%;
 }
+
+.mcuLink {
+	display: block;
+	font-size: 0;
+	margin-left: 16px;
+}
+.mcuLinkStatusDisconnected, .mcuLinkStatusLink {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 6px 4px;
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	background-size: auto 12px;
+	background-image: url(../icons/linkStatus.png);
+}
+	.mcuLinkStatusDisconnected {
+		background-position: 0 0;
+	}
+	.mcuLinkStatusLink {
+		background-position: -13px 0;
+	}
+.mcuLinkDescription {
+	display: inline-block;
+	width: 64px;
+	height: 24px;
+	margin: 0 4px;
+	line-height: 24px;
+	text-align: left;
+	vertical-align: top;
+}
+.mcuLinkDescription h6 {
+	color: #fff;
+	font-size: 10px;
+	font-weight: 300;
+}
