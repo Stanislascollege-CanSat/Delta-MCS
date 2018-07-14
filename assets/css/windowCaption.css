@@ -1,8 +1,57 @@
 #windowCaption {
+	display: flex;
+	box-sizing: border-box;
 	width: 100%;
-	height: 32px;
+	height: 24px;
 	background-color: #000;
 	-webkit-app-region: drag;
+	padding: 0 3px;
 }
 .windowCaptionButtons {
+	display: block;
+	-webkit-app-region: no-drag;
+	font-size: 0;
+}
+.windowClose, .windowMinimize, .windowMaximize {
+	display: inline-block;
+	position: relative;
+	width: 12px;
+	height: 12px;
+	margin: 6px 4px;
+	border-radius: 6px;
+	background-repeat: no-repeat;
+	background-size: auto 12px;
+}
+.windowClose {
+	background-image: url(../icons/windowCaption.png);
+	background-position: -65px 0;
+	margin-left: 6px;
+}
+.windowCaptionButtons:hover .windowClose {
+	background-position: -26px 0;
+}
+.windowMinimize {
+	background-image: url(../icons/windowCaption.png);
+	background-position: -39px 0;
+}
+.windowCaptionButtons:hover .windowMinimize {
+	background-position: 0 0;
+}
+.windowMaximize {
+	background-image: url(../icons/windowCaption.png);
+	background-position: -52px 0;
+}
+.windowCaptionButtons:hover .windowMaximize {
+	background-position: -13px 0;
+}
+.windowClose:active::after, .windowMinimize:active::after, .windowMaximize:active::after {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	background: rgba(0,0,0,0.25);
+	border-radius: 100%;
 }
