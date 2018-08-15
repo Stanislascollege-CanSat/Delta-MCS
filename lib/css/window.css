@@ -1,0 +1,45 @@
+#appContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+}
+#titleBar {
+  width: 100%;
+  height: 38px;
+  background-color: #d7d7d7;
+  display: flex;
+  -webkit-app-region:drag;
+}
+#windowControls {
+  width: 78px;
+  height: 38px;
+}
+#contentContainer {
+  width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+}
+#statusColumn {
+  width: 321px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  background-color: #f0f0f0;
+  border-right: solid 1px #dfdfdf;
+}
+#hardwareStatus {
+  width: 100%;
+  height: 281px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #dfdfdf;
+}
+#console {
+  width: 100%;
+  flex: 1 1 auto;
+}
+#missionData {
+  flex: 1 1 auto;
+  background-color: #fff;
+}
