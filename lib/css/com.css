@@ -1,7 +1,25 @@
 /* communication styling. */
 #comSettings {
-  width: 135px;
+  width: 220px;
   height: 38px;
-  line-height: 38px;
-  text-align: center;
+  box-sizing: border-box;
+  padding: 5px 10px 5px 10px;
+  font-size: 0;
+}
+#ports {
+  width: 172px;
+  height: 28px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #a5a5a5;
+  border-right: solid 1px #949494;
+  vertical-align: top;
+}
+#connect {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background-color: #a5a5a5;
+  vertical-align: top;
+  background-image: url(../icons/connect@2.svg)
 }
