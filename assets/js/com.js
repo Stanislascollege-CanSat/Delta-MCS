@@ -1,6 +1,6 @@
 // Handles all communication with groundstation MCU.
 const SerialPort = require('SerialPort')
-const port = new SerialPort('COM11', {
+const port = new SerialPort('/dev/cu.usbmodemFD121', {
 	baudRate: 9600
 })
 
