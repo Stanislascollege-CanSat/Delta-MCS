@@ -1,0 +1,22 @@
+{
+  "name": "delta",
+  "version": "0.0.1",
+  "description": "Hosted payload groundstation software",
+  "main": "lib/main/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanislascollege-CanSat/Delta.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stanislascollege-CanSat/Delta/issues"
+  },
+  "homepage": "https://github.com/Stanislascollege-CanSat/Delta#readme",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  }
+}
