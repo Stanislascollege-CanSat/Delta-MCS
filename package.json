@@ -1,7 +1,7 @@
 {
   "name": "delta",
   "productName": "Delta",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Project Beta hosted payload ground control software GUI",
   "main": "main.js",
   "scripts": {
