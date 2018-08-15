@@ -9,7 +9,7 @@
   width: 100%;
   height: 38px;
   flex-shrink: 0;
-  background-color: #d7d7d7;
+  background-color: var(--spaceGrey);
   display: flex;
   -webkit-app-region:drag;
 }
@@ -27,18 +27,19 @@
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
-  background-color: #f0f0f0;
-  border-right: solid 1px #dfdfdf;
+  background-color: var(--justGrey);
+  border-right: solid 1px var(--borderGrey);
 }
 #hardwareStatus {
   width: 100%;
   height: 281px;
   box-sizing: border-box;
-  border-bottom: solid 1px #dfdfdf;
+  border-bottom: solid 1px var(--borderGrey);
 }
 #console {
   width: 100%;
   flex: 1 1 auto;
+  background-color: var(--justWhite);
 }
 #missionData {
   flex: 1 1 auto;
