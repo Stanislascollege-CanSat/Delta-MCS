@@ -1,25 +1,49 @@
-/* communication styling. */
-#comSettings {
-  width: 220px;
+/* com styling . */
+#comContainer {
   height: 38px;
+  padding: 5px 10px;
   box-sizing: border-box;
-  padding: 5px 10px 5px 10px;
+}
+#com {
+  height: 28px;
+  background-color: var(--justGrey);
+  box-sizing: border-box;
+  border: solid 1px var(--borderGrey);
   font-size: 0;
 }
-#ports {
-  width: 172px;
-  height: 28px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: #a5a5a5;
-  border-right: solid 1px #949494;
-  vertical-align: top;
+#comIcon {
+  -webkit-mask-image: url(../icons/connect@2.svg);
 }
-#connect {
-  width: 28px;
-  height: 28px;
+#mcuStatus {
   display: inline-block;
-  background-color: #a5a5a5;
-  vertical-align: top;
-  background-image: url(../icons/connect@2.svg)
+  width: 36px;
+  height: 26px;
+  box-sizing: border-box;
+  border-left: solid 1px var(--borderGrey);
+}
+#mcuStatusDotContainer {
+  width: 24px;
+  height: 26px;
+  box-sizing: border-box;
+  padding: 8px 7px;
+}
+#mcuStatusDot {
+  border-radius: 6px;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+}
+.noLink {
+  background-color: #d50000;
+  border: solid 1px #9b0000;
+}
+#comStatus {
+  display: inline-block;
+  width: 36px;
+  height: 26px;
+  border-left: solid 1px var(--borderGrey);
+  border-right: solid 1px var(--borderGrey);
+}
+#comButton {
+  -webkit-mask-image: url(../icons/arrow_down@2.svg);
 }

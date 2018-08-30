@@ -7,11 +7,12 @@
 }
 #titleBar {
   width: 100%;
-  height: 38px;
+  height: 37px;
   flex-shrink: 0;
   background-color: var(--spaceGrey);
   display: flex;
   -webkit-app-region:drag;
+  border-bottom: solid 1px var(--black);
 }
 #windowControls {
   width: 78px;
@@ -44,4 +45,14 @@
 #missionData {
   flex: 1 1 auto;
   background-color: #fff;
+}
+/* Icon stylying for titleBar items. */
+.icon {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 18px;
+  background-color: var(--darkGrey);
 }
