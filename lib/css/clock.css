@@ -1,0 +1,35 @@
+/* clock styling . */
+#clockContainer {
+  height: 38px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+#clock {
+  height: 28px;
+  background-color: var(--justGrey);
+  box-sizing: border-box;
+  border: solid 1px var(--borderGrey);
+  font-size: 0;
+  -webkit-app-region: no-drag;
+}
+#clockIcon {
+  -webkit-mask-image: url(../icons/clock@2.svg);
+}
+#clockHolder {
+  display: inline-block;
+  height: 26px;
+  width: 64px;
+  box-sizing: border-box;
+  border-left: solid 1px var(--borderGrey);
+  border-right: solid 1px var(--borderGrey);
+}
+#missionclockIcon {
+  -webkit-mask-image: url(../icons/mission_time@2.svg);
+}
+#missionClock {
+  display: inline-block;
+  height: 26px;
+  width: 64px;
+  box-sizing: border-box;
+  border-left: solid 1px var(--borderGrey);
+}

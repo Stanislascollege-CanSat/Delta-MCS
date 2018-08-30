@@ -10,18 +10,19 @@
   box-sizing: border-box;
   border: solid 1px var(--borderGrey);
   font-size: 0;
+  -webkit-app-region: no-drag;
 }
 #comIcon {
   -webkit-mask-image: url(../icons/connect@2.svg);
 }
 #mcuStatus {
   display: inline-block;
-  width: 36px;
   height: 26px;
   box-sizing: border-box;
   border-left: solid 1px var(--borderGrey);
 }
 #mcuStatusDotContainer {
+  display: inline-block;
   width: 24px;
   height: 26px;
   box-sizing: border-box;
@@ -33,17 +34,75 @@
   height: 10px;
   box-sizing: border-box;
 }
-.noLink {
+#mcuStatusDot.noLink {
   background-color: #d50000;
   border: solid 1px #9b0000;
 }
+#mcuStatusDot.link {
+  background-color: #00c853;
+  border: solid 1px #009624;
+}
+.statusText {
+  display: inline-block;
+  height: 26px;
+  vertical-align: text-bottom;
+}
+#mcuStatusTextStatus {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 12px;
+  padding-right: 8px;
+}
+#mcuStatusTextDevice {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 10px;
+  color: var(--mediumGrey);
+  line-height: 10px;
+  padding-right: 8px;
+}
 #comStatus {
   display: inline-block;
-  width: 36px;
   height: 26px;
   border-left: solid 1px var(--borderGrey);
   border-right: solid 1px var(--borderGrey);
+  vertical-align: top;
+  padding-right: 8px;
+}
+#comStatusItem {
+  display: inline-block;
+  height: 26px;
+  -webkit-mask-size: 18px;
+  -webkit-mask-position: center left;
+  -webkit-mask-repeat: no-repeat;
+  vertical-align: text-top;
+}
+#comStatusItem .icon.sent {
+  -webkit-mask-image: url(../icons/sent@2.svg);
+  -webkit-mask-size: 15px;
+}
+#comStatusItem .icon.recieved {
+  -webkit-mask-image: url(../icons/recieved@2.svg);
+  -webkit-mask-size: 15px;
+}
+#comStatusItem .icon.rssi {
+  -webkit-mask-image: url(../icons/rssi@2.svg);
+  -webkit-mask-size: 15px;
+}
+#comStatusItem h6 {
+  display: inline-block;
+  font-family: Lato;
+  line-height: 26px;
+  color: var(--darkGrey);
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: -8px;
 }
 #comButton {
   -webkit-mask-image: url(../icons/arrow_down@2.svg);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+#comButton:hover {
+  background-color: var(--spaceGrey);
+  transform: scale(1.1);
 }

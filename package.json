@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron .",
     "packageMacOS": "electron-packager . Delta --platform=darwin --arch=x64 --out=builds",
-    "install": "electron-rebuild ."
+    "rebuild": "electron-rebuild ."
   },
   "repository": {
     "type": "git",

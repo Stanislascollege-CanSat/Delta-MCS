@@ -6,8 +6,10 @@
   <title>Delta</title>
   <link rel="stylesheet" type="text/css" href="lib/css/base.css">
   <link rel="stylesheet" type="text/css" href="lib/css/var.css">
+  <link rel="stylesheet" type="text/css" href="lib/css/font.css">
   <link rel="stylesheet" type="text/css" href="lib/css/window.css">
   <link rel="stylesheet" type="text/css" href="lib/css/com.css">
+  <link rel="stylesheet" type="text/css" href="lib/css/clock.css">
 <head>
 <body>
 <div id="appContainer">
@@ -18,21 +20,49 @@
         <div class="icon" id="comIcon"></div>
         <div id="mcuStatus">
           <div id="mcuStatusDotContainer">
-            <div id="mcuStatusDot" class="noLink"></div>
+            <div id="mcuStatusDot" class="link"></div>
+          </div>
+          <div class="statusText">
+            <h6 id="mcuStatusTextStatus" class="link">MCU verbonden</h6>
+            <h6 id="mcuStatusTextDevice">Arduino</h6>
           </div>
         </div>
-        <div id="comStatus"></div>
+        <div id="comStatus">
+          <div id="comStatusItem">
+            <div class="icon sent"></div>
+            <h6>: 43</h6>
+          </div>
+          <div id="comStatusItem">
+            <div class="icon recieved"></div>
+            <h6>: 873</h6>
+          </div>
+          <div id="comStatusItem">
+            <div class="icon rssi"></div>
+            <h6>: -37 dbm</h6>
+          </div>
+        </div>
         <div class="icon" id="comButton"></div>
-
+      </div>
+    </div>
+    <div id="clockContainer">
+      <div id="clock">
+        <div class="icon" id="clockIcon"></div>
+        <div id="clockHolder"></div>
+        <div class="icon" id="missionclockIcon"></div>
+        <div id="missionClock"></div>
       </div>
     </div>
   </div>
   <div id="contentContainer">
     <div id="statusColumn">
-      <div id="hardwareStatus"></div>
-      <div id="console"></div>
+      <div id="hardwareStatus">
+      </div>
+      <div id="console">
+      </div>
     </div>
-    <div id="missionData"></div>
+    <div id="missionData">
+      <div class="cornerText"><h6>MISSION</h6></div>
+    </div>
   </div>
 </div>
 <script src="lib/renderer/global.js"></script>
