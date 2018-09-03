@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="lib/css/window.css">
   <link rel="stylesheet" type="text/css" href="lib/css/com.css">
   <link rel="stylesheet" type="text/css" href="lib/css/clock.css">
+  <link rel="stylesheet" type="text/css" href="lib/css/battery.css">
+  <link rel="stylesheet" type="text/css" href="lib/css/console.css">
 <head>
 <body>
 <div id="appContainer">
@@ -20,25 +22,25 @@
         <div class="icon" id="comIcon"></div>
         <div id="mcuStatus">
           <div id="mcuStatusDotContainer">
-            <div id="mcuStatusDot" class="link"></div>
+            <div id="mcuStatusDot" class="noLink"></div>
           </div>
           <div class="statusText">
-            <h6 id="mcuStatusTextStatus" class="link">MCU verbonden</h6>
-            <h6 id="mcuStatusTextDevice">Arduino</h6>
+            <h6 id="mcuStatusTextStatus" class="noLink">Niet verbonden</h6>
+            <h6 id="mcuStatusTextDevice">n.v.t.</h6>
           </div>
         </div>
         <div id="comStatus">
           <div id="comStatusItem">
             <div class="icon sent"></div>
-            <h6>: 43</h6>
+            <h6>: --</h6>
           </div>
           <div id="comStatusItem">
             <div class="icon recieved"></div>
-            <h6>: 873</h6>
+            <h6>: --</h6>
           </div>
           <div id="comStatusItem">
             <div class="icon rssi"></div>
-            <h6>: -37 dbm</h6>
+            <h6>: -- dbm</h6>
           </div>
         </div>
         <div class="icon" id="comButton"></div>
@@ -47,9 +49,21 @@
     <div id="clockContainer">
       <div id="clock">
         <div class="icon" id="clockIcon"></div>
-        <div id="clockHolder"></div>
+        <div id="clockHolder">
+          <div id="clockGPS"><span class="bold clockSpan">Cansat</span> 00:00:00</div>
+          <div id="clockLocal"><span class="bold clockSpan">Local</span> 00:00:00</div>
+        </div>
         <div class="icon" id="missionclockIcon"></div>
-        <div id="missionClock"></div>
+        <div id="missionClock">00:00:00</div>
+      </div>
+    </div>
+    <div id="batteryContainer">
+      <div id="battery">
+        <div class="icon" id="batteryIcon"></div>
+        <div id="batteryHolder">
+          <div class="percentage">--%</div>
+          <div class="voltage">-.--V</div>
+        </div>
       </div>
     </div>
   </div>
@@ -58,6 +72,10 @@
       <div id="hardwareStatus">
       </div>
       <div id="console">
+        <div id="consoleText"></div>
+        <div id="consoleControls">
+          <div id="consoleInput"></div>
+        </div>
       </div>
     </div>
     <div id="missionData">
@@ -66,6 +84,8 @@
   </div>
 </div>
 <script src="lib/renderer/global.js"></script>
+<script src="lib/renderer/clock.js"></script>
 <script src="lib/renderer/com.js"></script>
+<script src="lib/extensions/vanilla-tilt.js"></script>
 </body>
 </html>

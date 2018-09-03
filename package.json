@@ -25,6 +25,7 @@
     "electron-rebuild": "^1.8.2"
   },
   "dependencies": {
-    "serialport": "^6.2.2"
+    "serialport": "^6.2.2",
+    "vanilla-tilt": "^1.4.1"
   }
 }

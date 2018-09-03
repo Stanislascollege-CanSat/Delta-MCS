@@ -3,6 +3,8 @@
   height: 38px;
   padding: 5px 10px;
   box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
 }
 #com {
   height: 28px;
@@ -52,6 +54,12 @@
   font-size: 12px;
   line-height: 12px;
   padding-right: 8px;
+}
+#mcuStatusTextStatus.link {
+  color: #00c853;
+}
+#mcuStatusTextStatus.noLink {
+  color: #d50000;
 }
 #mcuStatusTextDevice {
   font-family: Lato;

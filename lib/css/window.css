@@ -41,10 +41,14 @@
   width: 100%;
   flex: 1 1 auto;
   background-color: var(--justWhite);
+  display: flex;
+  flex-direction: column;
 }
 #missionData {
   flex: 1 1 auto;
   background-color: #fff;
+  box-sizing: border-box;
+  padding: 16px;
 }
 /* Icon stylying for titleBar items. */
 .icon {
@@ -62,12 +66,12 @@
   position: relative;
   top: 33px;
   left: -33px;
-  padding: 16px;
   line-height: 12px;
   font-family: Lato;
   color: var(--mediumGrey);
   transform: rotate(-90deg);
   width: 78px;
-  opacity: 0.3;
+  opacity: 0.5;
   letter-spacing: 2px;
+  user-select: none;
 }

@@ -1,0 +1,44 @@
+/* battery styling . */
+#batteryContainer {
+  height: 38px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
+}
+#battery {
+  height: 28px;
+  background-color: var(--justGrey);
+  box-sizing: border-box;
+  border: solid 1px var(--borderGrey);
+  font-size: 0;
+  -webkit-app-region: no-drag;
+}
+#batteryIcon {
+  -webkit-mask-image: url(../icons/battery@2.svg);
+}
+#batteryHolder {
+  display: inline-block;
+  height: 26px;
+  box-sizing: border-box;
+  border-left: solid 1px var(--borderGrey);
+  vertical-align: bottom;
+}
+#batteryHolder .percentage {
+  height: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 13px;
+  font-family: Lato;
+  font-size: 11px;
+  color: var(--darkGrey);
+}
+#batteryHolder .voltage {
+  height: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 13px;
+  font-family: Lato;
+  font-size: 11px;
+  color: var(--darkGrey);
+}

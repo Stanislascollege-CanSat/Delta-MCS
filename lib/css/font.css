@@ -11,3 +11,9 @@
   font-style: normal;
   font-weight: 300;
 }
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/lato/Lato-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}

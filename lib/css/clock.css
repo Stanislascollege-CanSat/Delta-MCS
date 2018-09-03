@@ -3,6 +3,8 @@
   height: 38px;
   padding: 5px 10px;
   box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
 }
 #clock {
   height: 28px;
@@ -18,18 +20,50 @@
 #clockHolder {
   display: inline-block;
   height: 26px;
-  width: 64px;
   box-sizing: border-box;
   border-left: solid 1px var(--borderGrey);
   border-right: solid 1px var(--borderGrey);
+  vertical-align: bottom;
 }
+#clockGPS {
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 13px;
+  line-height: 13px;
+  font-family: Lato;
+  font-size: 11px;
+  color: var(--darkGrey);
+}
+#clockLocal {
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 13px;
+  line-height: 13px;
+  font-family: Lato;
+  font-size: 11px;
+  color: var(--darkGrey);
+}
+.clockSpan {
+  width: 34px;
+  display: inline-block;
+  text-align: right;
+}
+
 #missionclockIcon {
   -webkit-mask-image: url(../icons/mission_time@2.svg);
 }
 #missionClock {
   display: inline-block;
   height: 26px;
-  width: 64px;
+  padding-left: 8px;
+  padding-right: 8px;
   box-sizing: border-box;
   border-left: solid 1px var(--borderGrey);
+  vertical-align: bottom;
+  font-family: Lato;
+  font-size: 12px;
+  color: var(--darkGrey);
+  line-height: 26px;
 }
