@@ -19,3 +19,6 @@ button, select {
   font-weight: 700;
   font-size: inherit;
 }
+.hidden {
+  visibility: hidden;
+}

@@ -1,6 +1,15 @@
 #consoleText {
   flex: 1 1 auto;
   border-bottom: solid 1px var(--borderGrey);
+  padding: 0 8px;
+  line-height: 16px;
+  font-family: Lato;
+  color: var(--darkGrey);
+  overflow: scroll;
+}
+#consoleText h6 {
+  font-size: 12px;
+  font-weight: 400;
 }
 #consoleControls {
 width: 100%;
@@ -8,7 +17,8 @@ height: 38px;
 background-color: var(--justGrey);
 box-sizing: border-box;
 padding: 4px;
+flex: 0 0 auto;
 }
 #consoleInput {
-  
+
 }

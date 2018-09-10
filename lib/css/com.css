@@ -114,3 +114,71 @@
   background-color: var(--spaceGrey);
   transform: scale(1.1);
 }
+/* Com menu */
+#comMenu {
+  display: block;
+  position: absolute;
+  width: 200px;
+  top: 32px;
+  left: 215px;
+  background-color: var(--justGrey);
+  box-sizing: border-box;
+  border: solid 1px var(--borderGrey);
+  z-index: 1;
+  box-shadow: 0px 5px 8px -2px rgba(0,0,0,0.24);
+}
+#comMenuTitle {
+  width: 100%;
+  height: 27px;
+  border-bottom: solid 1px var(--borderGrey);
+}
+#comMenuTitle h6 {
+  font-family: Lato;
+  font-weight: 700;
+  padding-left: 8px;
+  color: var(--darkGrey);
+  font-size: 12px;
+  line-height: 26px;
+}
+#comMenuItem {
+  width: 100%;
+  height: 27px;
+  border-bottom: solid 1px var(--borderGrey);
+}
+#comMenuItem h6 {
+  font-family: Lato;
+  font-weight: 400;
+  padding-left: 8px;
+  color: var(--darkGrey);
+  font-size: 12px;
+  line-height: 26px;
+}
+#comMenuItem h6:hover {
+  text-decoration: underline;
+}
+#comMenuButton {
+  width: 100%;
+  height: 28px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  text-align: center;
+}
+#connectButton {
+  background-color: var(--lightGreen);
+  width: 100%;
+  height: 18px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--justWhite);
+  cursor: pointer;
+}
+#connectButton:hover{
+  background-color: var(--mediumGreen);
+}
+.blocked {
+  background-color: var(--mediumGrey)!important;
+  cursor: default!important;
+}
+.blocked:hover {
+  background-color: var(--mediumGrey)!important;
+}

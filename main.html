@@ -44,17 +44,24 @@
           </div>
         </div>
         <div class="icon" id="comButton"></div>
+        <div id="comMenu" class="hidden">
+          <div id="comMenuTitle"><h6>Devices:</h6></div>
+          <div id="comMenuItemHolder"></div>
+          <div id="comMenuButton">
+            <button id="connectButton" class="blocked">Connect</button>
+          </div>
+        </div>
       </div>
     </div>
     <div id="clockContainer">
       <div id="clock">
         <div class="icon" id="clockIcon"></div>
         <div id="clockHolder">
-          <div id="clockGPS"><span class="bold clockSpan">Cansat</span> 00:00:00</div>
+          <div id="clockGPS"><span class="bold clockSpan">Cansat</span> --:--:--</div>
           <div id="clockLocal"><span class="bold clockSpan">Local</span> 00:00:00</div>
         </div>
         <div class="icon" id="missionclockIcon"></div>
-        <div id="missionClock">00:00:00</div>
+        <div id="missionClock">--:--:--</div>
       </div>
     </div>
     <div id="batteryContainer">
@@ -86,6 +93,7 @@
 <script src="lib/renderer/global.js"></script>
 <script src="lib/renderer/clock.js"></script>
 <script src="lib/renderer/com.js"></script>
+<script src="lib/renderer/console.js"></script>
 <script src="lib/extensions/vanilla-tilt.js"></script>
 </body>
 </html>
