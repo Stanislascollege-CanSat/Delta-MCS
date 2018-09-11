@@ -11,6 +11,14 @@
   font-size: 12px;
   font-weight: 400;
 }
+#consoleText h6.warn {
+  background-color: #;
+  color: #;
+}
+#consoleText h6.error {
+  background-color: #;
+  color: #;
+}
 #consoleControls {
 width: 100%;
 height: 38px;
