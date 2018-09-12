@@ -1,9 +1,9 @@
 /* Lato */
 @font-face {
   font-family: Lato;
-  src: url(../fonts/lato/Lato-Regular.ttf);
+  src: url(../fonts/lato/Lato-Hairline.ttf);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
 }
 @font-face {
   font-family: Lato;
@@ -13,7 +13,21 @@
 }
 @font-face {
   font-family: Lato;
+  src: url(../fonts/lato/Lato-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lato;
   src: url(../fonts/lato/Lato-Bold.ttf);
   font-style: normal;
   font-weight: 700;
+}
+
+/* Roboto Mono */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/roboto_mono/RobotoMono-Regular.ttf);
 }
