@@ -158,6 +158,9 @@
 #comMenuItem h6:hover {
   text-decoration: underline;
 }
+#comMenuItem.subtitle h6 {
+  line-height: 13px;
+}
 #comMenuButton {
   width: 100%;
   height: 28px;
