@@ -3,17 +3,17 @@
   border-bottom: solid 1px var(--borderGrey);
   padding: 0 8px;
   line-height: 16px;
-  font-family: Lato;
+  font-family: 'Roboto Mono', monospace;
   color: var(--darkGrey);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 #consoleText h6 {
   font-size: 12px;
   font-weight: 400;
 }
 #consoleText h6.warn {
-  background-color: #;
-  color: #;
+  background-color: yellow;
+  color: orange;
 }
 #consoleText h6.error {
   background-color: #;
