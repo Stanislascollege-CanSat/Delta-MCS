@@ -68,7 +68,6 @@
   top: 33px;
   left: -33px;
   line-height: 12px;
-  font-family: Lato;
   color: var(--mediumGrey);
   transform: rotate(-90deg);
   width: 78px;
@@ -77,9 +76,26 @@
   user-select: none;
 }
 
+/* Tooltip */
+.tooltips {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 /* Tippy */
 .tippy-popper {
-  font-family: Lato;
   font-size: 8px;
+}
+.tippy-tooltip{
+  background-color: var(--black);
+}
+.tippy-roundarrow {
+  fill: var(--black);
+}
+.tippy-content {
+  font-size: 14px;
+  color: var(--justGrey);
 }

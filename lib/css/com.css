@@ -51,7 +51,6 @@
   vertical-align: text-bottom;
 }
 #mcuStatusTextStatus {
-  font-family: Lato;
   font-size: 12px;
   line-height: 12px;
   padding-right: 8px;
@@ -64,7 +63,6 @@
   color: #d50000;
 }
 #mcuStatusTextDevice {
-  font-family: Lato;
   font-weight: 300;
   font-size: 10px;
   color: var(--mediumGrey);
@@ -101,7 +99,6 @@
 }
 #comStatusItem h6 {
   display: inline-block;
-  font-family: Lato;
   line-height: 26px;
   color: var(--darkGrey);
   font-size: 12px;
@@ -135,7 +132,6 @@
   border-bottom: solid 1px var(--borderGrey);
 }
 #comMenuTitle h6 {
-  font-family: Lato;
   font-weight: 700;
   padding-left: 8px;
   color: var(--darkGrey);
@@ -152,7 +148,6 @@
   background-color: var(--justWhite);
 }
 #comMenuItem.title h6 {
-  font-family: Lato;
   font-weight: 400;
   padding-left: 8px;
   color: var(--darkGrey);
@@ -160,7 +155,6 @@
   line-height: 26px;
 }
 #comMenuItem.subtitle h6 {
-  font-family: Lato;
   font-weight: 400;
   padding-left: 8px;
   color: var(--darkGrey);
