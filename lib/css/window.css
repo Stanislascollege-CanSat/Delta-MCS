@@ -68,7 +68,6 @@
   top: 33px;
   left: -33px;
   line-height: 12px;
-  font-family: Lato;
   color: var(--mediumGrey);
   transform: rotate(-90deg);
   width: 78px;
@@ -80,6 +79,5 @@
 
 /* Tippy */
 .tippy-popper {
-  font-family: Lato;
   font-size: 8px;
 }

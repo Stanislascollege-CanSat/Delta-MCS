@@ -31,7 +31,6 @@
   padding-right: 8px;
   height: 13px;
   line-height: 13px;
-  font-family: Lato;
   font-size: 11px;
   color: var(--darkGrey);
 }
@@ -41,7 +40,6 @@
   padding-right: 8px;
   height: 13px;
   line-height: 13px;
-  font-family: Lato;
   font-size: 11px;
   color: var(--darkGrey);
 }
@@ -62,7 +60,6 @@
   box-sizing: border-box;
   border-left: solid 1px var(--borderGrey);
   vertical-align: bottom;
-  font-family: Lato;
   font-size: 12px;
   color: var(--darkGrey);
   line-height: 26px;
