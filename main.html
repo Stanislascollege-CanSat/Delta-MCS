@@ -15,11 +15,12 @@
 <head>
 <body>
 <div id="appContainer">
+  <div></div>
   <div id="titleBar">
     <div id="windowControls"></div>
     <div id="comContainer">
       <div id="com">
-        <div class="icon" id="comIcon"></div>
+        <div class="icon" id="comIcon" title="Radio Connection"></div>
         <div id="mcuStatus">
           <div id="mcuStatusDotContainer">
             <div id="mcuStatusDot" class="noLink"></div>
@@ -30,20 +31,20 @@
           </div>
         </div>
         <div id="comStatus">
-          <div id="comStatusItem">
+          <div id="comStatusItem" title="Send packets">
             <div class="icon sent"></div>
             <h6>: --</h6>
           </div>
-          <div id="comStatusItem">
+          <div id="comStatusItem" title="Recieved packets">
             <div class="icon recieved"></div>
             <h6>: --</h6>
           </div>
-          <div id="comStatusItem">
+          <div id="comStatusItem" title="Connection RSSI">
             <div class="icon rssi"></div>
             <h6>: -- dbm</h6>
           </div>
         </div>
-        <div class="icon" id="comButton"></div>
+        <div class="icon" id="comButton" title="Serial settings"></div>
         <div id="comMenu" class="hidden">
           <div id="comMenuTitle"><h6>Devices:</h6></div>
           <div id="comMenuItemHolder"></div>
@@ -94,6 +95,7 @@
 <script src="lib/renderer/clock.js"></script>
 <script src="lib/renderer/com.js"></script>
 <script src="lib/renderer/console.js"></script>
+<script src="lib/renderer/parser.js"></script>
 <script src="lib/extensions/vanilla-tilt.js"></script>
 </body>
 </html>

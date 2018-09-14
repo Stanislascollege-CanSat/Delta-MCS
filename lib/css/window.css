@@ -76,3 +76,10 @@
   letter-spacing: 2px;
   user-select: none;
 }
+
+
+/* Tippy */
+.tippy-popper {
+  font-family: Lato;
+  font-size: 8px;
+}

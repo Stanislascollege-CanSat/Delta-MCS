@@ -146,8 +146,12 @@
   width: 100%;
   height: 27px;
   border-bottom: solid 1px var(--borderGrey);
+  transition: background-color 0.1s ease-in;
 }
-#comMenuItem h6 {
+#comMenuItem:hover {
+  background-color: var(--justWhite);
+}
+#comMenuItem.title h6 {
   font-family: Lato;
   font-weight: 400;
   padding-left: 8px;
@@ -155,11 +159,16 @@
   font-size: 12px;
   line-height: 26px;
 }
-#comMenuItem h6:hover {
-  text-decoration: underline;
-}
 #comMenuItem.subtitle h6 {
+  font-family: Lato;
+  font-weight: 400;
+  padding-left: 8px;
+  color: var(--darkGrey);
+  font-size: 12px;
   line-height: 13px;
+}
+#comMenuItem.subtitle h6:nth-child(2) {
+  color: var(--mediumGrey);
 }
 #comMenuButton {
   width: 100%;

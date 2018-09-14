@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "serialport": "^6.2.2",
+    "tippy.js": "^2.6.0",
     "vanilla-tilt": "^1.4.1"
   }
 }
