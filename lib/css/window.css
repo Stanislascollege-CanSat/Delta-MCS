@@ -81,3 +81,13 @@
 .tippy-popper {
   font-size: 8px;
 }
+.tippy-tooltip{
+  background-color: var(--black);
+}
+.tippy-roundarrow {
+  fill: var(--black);
+}
+.tippy-content {
+  font-size: 14px;
+  color: var(--justGrey);
+}
