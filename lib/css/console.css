@@ -16,8 +16,8 @@
   color: orange;
 }
 #consoleText h6.error {
-  background-color: #;
-  color: #;
+  background-color: red;
+  color: pink;
 }
 #consoleControls {
 width: 100%;
