@@ -101,3 +101,11 @@
   font-size: 14px;
   color: var(--justGrey);
 }
+
+#innerCanvas {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  top: 200px;
+  left: 300px;
+}

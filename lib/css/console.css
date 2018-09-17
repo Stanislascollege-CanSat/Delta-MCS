@@ -1,15 +1,15 @@
 #consoleText {
   flex: 1 1 auto;
   border-bottom: solid 1px var(--borderGrey);
-  padding: 0 8px;
   line-height: 16px;
   font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
   color: var(--darkGrey);
   overflow-y: scroll;
 }
 #consoleText h6 {
-  font-size: 12px;
   font-weight: 400;
+  padding: 0 8px;
 }
 #consoleText h6.warn {
   background-color: yellow;
