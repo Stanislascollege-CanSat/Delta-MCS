@@ -1,24 +1,46 @@
 #consoleText {
   flex: 1 1 auto;
   border-bottom: solid 1px var(--borderGrey);
-  line-height: 16px;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 11px;
   color: var(--darkGrey);
   overflow-y: scroll;
 }
-#consoleText h6 {
-  font-weight: 400;
-  padding: 0 8px;
+#consoleEntry {
+  min-height: 17px;
+  box-sizing: border-box;
+  border-top: solid 1px var(--justGrey);
+  line-height: 16px;
+  font-family: monospace;
 }
-#consoleText h6.warn {
+#consoleEntry .flow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  text-align: center;
+}
+#consoleEntry .text {
+  display: inline-block;
+  width: calc(100% - 16px);
+  min-height: 16px;
+  vertical-align: top;
+}
+#consoleEntry .text h6 {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 0 8px;
+}
+/* Warning style */
+#consoleEntry.warn {
   background-color: yellow;
   color: orange;
 }
-#consoleText h6.error {
+
+/* Error style */
+#consoleEntry.error {
   background-color: red;
   color: pink;
 }
+
 #consoleControls {
 width: 100%;
 height: 38px;
