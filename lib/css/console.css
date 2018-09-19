@@ -7,7 +7,6 @@
   min-height: 19px;
   box-sizing: border-box;
   border-top: solid 1px var(--justGrey);
-  line-height: 18px;
 }
 #consoleEntry .flow {
   display: inline-block;
@@ -29,6 +28,7 @@
   font-weight: 400;
   font-family: 'Roboto Mono', monospace;
   padding: 0 4px;
+  line-height: 18px;
   color: var(--darkGrey);
 }
 /* Warning style */
