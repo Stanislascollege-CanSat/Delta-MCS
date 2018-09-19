@@ -9,7 +9,6 @@
   box-sizing: border-box;
   border-top: solid 1px var(--justGrey);
   line-height: 16px;
-  font-family: monospace;
 }
 #consoleEntry .flow {
   display: inline-block;
@@ -27,7 +26,8 @@
 #consoleEntry .text h6 {
   font-size: 12px;
   font-weight: 400;
-  padding-left: 0 8px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0 4px;
 }
 /* Warning style */
 #consoleEntry.warn {
