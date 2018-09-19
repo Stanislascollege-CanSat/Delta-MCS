@@ -11,4 +11,11 @@
   --text: #2c2c2d;
   --lightGreen: #00c853;
   --mediumGreen: #009624;
+  /* Console colors */
+  --ErrorBackground: #ffbebd;
+  --ErrorBorder: #ff908d;
+  --Error: #b61827;
+  --WarningBackground: #ffe97d;
+  --WarningBorder: #ffd54f;
+  --Warning: #c17900;
 }

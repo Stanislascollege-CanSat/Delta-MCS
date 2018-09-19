@@ -1,26 +1,27 @@
 #consoleText {
   flex: 1 1 auto;
   border-bottom: solid 1px var(--borderGrey);
-  color: var(--darkGrey);
   overflow-y: scroll;
 }
 #consoleEntry {
-  min-height: 17px;
+  min-height: 19px;
   box-sizing: border-box;
   border-top: solid 1px var(--justGrey);
-  line-height: 16px;
+  line-height: 18px;
 }
 #consoleEntry .flow {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   vertical-align: top;
-  text-align: center;
+  -webkit-mask-size: 15px;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
 }
 #consoleEntry .text {
   display: inline-block;
-  width: calc(100% - 16px);
-  min-height: 16px;
+  width: calc(100% - 18px);
+  min-height: 18px;
   vertical-align: top;
 }
 #consoleEntry .text h6 {
@@ -28,17 +29,28 @@
   font-weight: 400;
   font-family: 'Roboto Mono', monospace;
   padding: 0 4px;
+  color: var(--darkGrey);
 }
 /* Warning style */
 #consoleEntry.warn {
-  background-color: yellow;
-  color: orange;
+  background-color: var(--WarningBackground);
+  color: var(--Warning);
+  border-color: var(--WarningBorder);
+}
+#consoleEntry.warn .flow {
+  -webkit-mask-image: url(../icons/warning@2.svg);
+  background-color: var(--Warning);
 }
 
 /* Error style */
 #consoleEntry.error {
-  background-color: red;
-  color: pink;
+  background-color: var(--ErrorBackground);
+  color: var(--Error);
+  border-color: var(--ErrorBorder);
+}
+#consoleEntry.error .flow {
+  -webkit-mask-image: url(../icons/error@2.svg);
+  background-color: var(--Error);
 }
 
 #consoleControls {
