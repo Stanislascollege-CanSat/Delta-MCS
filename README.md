@@ -1,4 +1,4 @@
-![Delta Logo](/lib/icon/png/256x256.png)
+![Delta Logo](/lib/icons/png/256x256.png)
 # Delta
 
 Mission control software for the Mother Can groundstation hardware.
