@@ -73,6 +73,7 @@ flex: 0 0 auto;
 }
 #consoleText::-webkit-scrollbar-track-piece {
   background-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.12);
 }
 #consoleText::-webkit-scrollbar-thumb, #consoleText::-webkit-scrollbar-track-piece{
   border-radius: 7px;

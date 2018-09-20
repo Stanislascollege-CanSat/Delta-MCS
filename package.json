@@ -1,12 +1,12 @@
 {
   "name": "delta",
   "productName": "Delta",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Hosted payload groundstation software",
   "main": "lib/main/main.js",
   "scripts": {
     "start": "electron .",
-    "packageMacOS": "electron-packager . Delta --platform=darwin --arch=x64 --out=builds",
+    "packageMacOS": "electron-packager . Delta --platform=darwin --arch=x64 --out=builds && mv builds/Delta-darwin-x64/Delta.app builds && rm -r builds/Delta-darwin-x64",
     "rebuild": "electron-rebuild ."
   },
   "repository": {
