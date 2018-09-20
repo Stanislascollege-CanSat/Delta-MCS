@@ -67,6 +67,7 @@ flex: 0 0 auto;
 /* Scrollbar */
 #consoleText::-webkit-scrollbar {
   width: 14px;
+  height: 14px;
 }
 #consoleText::-webkit-scrollbar-thumb {
   background-color: var(--mediumGrey);
