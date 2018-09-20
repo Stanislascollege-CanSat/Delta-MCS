@@ -7,7 +7,8 @@
   "scripts": {
     "start": "electron .",
     "packageMacOS": "electron-packager . Delta --overwrite --platform=darwin --arch=x64 --icon=lib/icons/mac/icon.icns --out=builds && mv builds/Delta-darwin-x64/Delta.app builds && rm -r builds/Delta-darwin-x64",
-    "rebuild": "electron-rebuild ."
+    "rebuild": "electron-rebuild .",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
   "devDependencies": {
     "electron": "^2.0.9",
     "electron-packager": "^12.1.2",
-    "electron-rebuild": "^1.8.2"
+    "electron-rebuild": "^1.8.2",
+    "eslint": "^5.6.0"
   },
   "dependencies": {
     "serialport": "^6.2.2",
