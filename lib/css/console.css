@@ -62,8 +62,30 @@ padding: 4px;
 flex: 0 0 auto;
 }
 #consoleInput {
-
+  width: 100%;
+  height: 30px;
 }
+#consoleInput .field {
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: solid 1px var(--borderGrey);
+  background-color: #fff;
+  color: var(--spaceGrey);
+  transition: border-color 0.2s ease;
+  line-height: 22px;
+  font-size: 14px;
+}
+#consoleInput .field:hover {
+  border-color: var(--spaceGrey);
+}
+#consoleInput .field:focus {
+  box-shadow: 0 0 0 1px var(--lightGreen);
+  outline: none;
+}
+
 /* Scrollbar */
 #consoleText::-webkit-scrollbar {
   width: 14px;
