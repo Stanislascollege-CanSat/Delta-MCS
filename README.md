@@ -5,6 +5,6 @@
 
 Mission control software for the Mother Can groundstation hardware.
 
-Build for the CanSat competition.
+Build for the Dutch CanSat competition.
 
 ###### License [MIT](https://github.com/Stanislascollege-CanSat/Delta/blob/master/LICENSE)
