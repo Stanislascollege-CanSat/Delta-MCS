@@ -8,7 +8,8 @@
     "start": "electron .",
     "packageMacOS": "electron-packager . Delta --overwrite --platform=darwin --arch=x64 --icon=lib/icons/mac/icon.icns --out=builds && mv builds/Delta-darwin-x64/Delta.app builds && rm -r builds/Delta-darwin-x64",
     "rebuild": "electron-rebuild .",
-    "lint": "eslint ./"
+    "lint": "standard",
+    "lintFix": "standard --fix"
   },
   "repository": {
     "type": "git",
