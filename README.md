@@ -1,6 +1,8 @@
 ![Delta Logo](/lib/icons/png/256x256.png)
 # Delta
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 Mission control software for the Mother Can groundstation hardware.
 
 Build for the CanSat competition.
