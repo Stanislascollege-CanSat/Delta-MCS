@@ -33,15 +33,15 @@
         <div id="comStatus">
           <div id="comStatusItem" title="Send packets">
             <div class="icon sent"></div>
-            <h6>: --</h6>
+            <h6 id="packetsSend">: --</h6>
           </div>
-          <div id="comStatusItem" title="Recieved packets">
-            <div class="icon recieved"></div>
-            <h6>: --</h6>
+          <div id="comStatusItem" title="Received packets">
+            <div class="icon received"></div>
+            <h6 id="packetsReceived">: --</h6>
           </div>
           <div id="comStatusItem" title="Connection RSSI">
             <div class="icon rssi"></div>
-            <h6>: -- dbm</h6>
+            <h6 id="rssi">: -- dbm</h6>
           </div>
         </div>
         <div class="icon" id="comButton" title="Serial settings"></div>
@@ -82,7 +82,9 @@
       <div id="console">
         <div id="consoleText"></div>
         <div id="consoleControls">
-          <div id="consoleInput"></div>
+          <div id="consoleInput">
+            <input type="text" name="input" class="field" placeholder="function(arg)">
+          </div>
         </div>
       </div>
     </div>

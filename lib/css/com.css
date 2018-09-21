@@ -89,8 +89,8 @@
   -webkit-mask-image: url(../icons/sent@2.svg);
   -webkit-mask-size: 15px;
 }
-#comStatusItem .icon.recieved {
-  -webkit-mask-image: url(../icons/recieved@2.svg);
+#comStatusItem .icon.received {
+  -webkit-mask-image: url(../icons/received@2.svg);
   -webkit-mask-size: 15px;
 }
 #comStatusItem .icon.rssi {
