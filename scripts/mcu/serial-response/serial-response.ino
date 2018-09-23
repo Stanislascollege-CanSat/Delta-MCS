@@ -10,7 +10,7 @@ bool messageComplete = false;
 
 void setup() {
   Serial.begin(9600);
-  // reserve 200 bytes for the inputString:
+  // reserve 200 bytes for the incomingString.
   incomingString.reserve(200);
 }
 
@@ -33,8 +33,7 @@ void serialEvent() {
     incomingString += incoming;
     // If incoming character is newline than set messageComplete to true.
     if (incoming == '\n') {
-      messageComplete = true; 
+      messageComplete = true;
     }
   }
 }
-
