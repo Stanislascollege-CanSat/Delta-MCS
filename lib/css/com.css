@@ -1,7 +1,7 @@
 /* com styling . */
 #comContainer {
   height: 38px;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 0;
   box-sizing: border-box;
   user-select: none;
   overflow: hidden;
@@ -81,6 +81,7 @@
 }
 #comStatusItem {
   display: inline-block;
+  width: 72px;
   height: 26px;
   -webkit-mask-size: 18px;
   -webkit-mask-position: center left;
