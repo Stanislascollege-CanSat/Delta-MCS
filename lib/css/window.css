@@ -50,6 +50,7 @@
   background-color: #fff;
   box-sizing: border-box;
   padding: 16px;
+  font-size: 0;
 }
 /* Icon stylying for titleBar items. */
 .icon {
