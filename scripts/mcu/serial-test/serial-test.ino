@@ -9,7 +9,9 @@ void loop() {
   // put your main code here, to run repeatedly:
   Serial.print("{GPS:");
   Serial.print(x);
-  Serial.print(";AcX:12,33;");
+  Serial.print(";AcX:12,33;Hgt:");
+  Serial.print(rand() % 5);
+  Serial.print(";}");
   x += 1;
   delay(200);
 }
