@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "chart.js": "^2.7.3",
+    "chartjs-plugin-streaming": "^1.7.1",
     "moment": "^2.22.2",
     "serialport": "^6.2.2",
     "tippy.js": "^2.6.0",
