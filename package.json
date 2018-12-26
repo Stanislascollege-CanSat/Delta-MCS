@@ -1,7 +1,7 @@
 {
   "name": "delta",
   "productName": "Delta",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Hosted payload groundstation software",
   "main": "lib/main/main.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Stanislascollege-CanSat/Delta#readme",
   "devDependencies": {
-    "electron": "^2.0.9",
+    "electron": "^2.0.16",
     "electron-packager": "^12.1.12",
     "electron-rebuild": "^1.8.2",
     "standard": "^12.0.1"
@@ -30,9 +30,9 @@
   "dependencies": {
     "chart.js": "^2.7.3",
     "chartjs-plugin-streaming": "^1.7.1",
-    "moment": "^2.22.2",
+    "moment": "^2.23.0",
     "serialport": "^6.2.2",
     "tippy.js": "^2.6.0",
-    "vanilla-tilt": "^1.5.0"
+    "vanilla-tilt": "^1.6.0"
   }
 }
