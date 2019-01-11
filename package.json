@@ -1,7 +1,7 @@
 {
   "name": "delta",
   "productName": "Delta",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Hosted payload groundstation software",
   "main": "lib/main/main.js",
   "scripts": {
