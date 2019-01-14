@@ -43,12 +43,14 @@
   font-size: 11px;
   color: var(--darkGrey);
 }
+#clockLocalInner {
+  font-size: 11px;
+}
 .clockSpan {
   width: 34px;
   display: inline-block;
   text-align: right;
 }
-
 #missionclockIcon {
   -webkit-mask-image: url(../icons/mission_time@2.svg);
 }
