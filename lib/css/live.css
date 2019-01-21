@@ -3,9 +3,9 @@
   display: inline-block;
 }
 #viewContainer {
-  width: 200px;
+  width: 350px;
+  height: 350px;
   display: inline-block;
-  height: 200px;
 }
 #view-3d {
   width: 100%;
