@@ -6,6 +6,7 @@
   width: 350px;
   height: 350px;
   display: inline-block;
+  position: relative;
 }
 #view-3d {
   width: 100%;
