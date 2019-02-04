@@ -1,3 +1,5 @@
+
+
 // Feather9x_RX
 // -*- mode: C++ -*-
 // Example sketch showing how to create a simple messaging client (receiver)
@@ -7,10 +9,13 @@
 // It is designed to work with the other example Feather9x_TX
 
 #include <SPI.h>
+#include <Servo.h>
 #include <RH_RF95.h>
 
-#define RFM95_RST     2
-#define RFM95_CS      4
+Servo myservo;
+
+#define RFM95_RST     9
+#define RFM95_CS      10
 #define RFM95_INT     3
 
 // Change to 434.0 or other frequency, must match RX's freq!
