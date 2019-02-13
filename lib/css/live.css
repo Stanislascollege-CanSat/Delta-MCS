@@ -1,3 +1,68 @@
+.statusName {
+  line-height: 12px;
+  padding: 12px 12px 6px 12px;
+  color: #111;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.statusName h4 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.statusValue {
+  display: inline-block;
+  height: 24px;
+  box-sizing: border-box;
+  vertical-align: top;
+  flex: 1 1 auto;
+}
+.statusValueInner {
+  width: 100%;
+  height: 24px;
+  border-radius: 16px;
+  line-height: 24px;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.statusValueInner h4 {
+  text-align: center;
+  font-size: 12px;
+  color: inherit;
+  font-weight: 700;
+}
+.statusGood {
+  background-color: #43b581;
+  color: #fff;
+}
+.statusWarn {
+  background-color: #faa61a;
+  color: #fff;
+}
+.statusError {
+  background-color: #d50000;
+  color: #fff;
+}
+#status {
+  width: 100%;
+  padding: 0 12px;
+}
+#subsytemHolder {
+  display: flex;
+  flex-direction: row;
+}
+#statusRF {
+  padding: 0 3px 0 12px;
+}
+#statusIMU {
+  padding: 0 3px;
+}
+#statusGPS {
+  padding: 0 3px;
+}
+#statusTelemetry {
+  padding: 0 12px 0 3px;
+}
+/* Chart styling */
 #chartContainer {
   width: 50%;
   display: inline-block;
