@@ -3,7 +3,7 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Mission control software for the Mother Can groundstation hardware.
+Mission control software for the MotherCan groundstation hardware.
 
 Build for the Dutch CanSat competition.
 
