@@ -12,6 +12,7 @@
 .statusValue {
   display: inline-block;
   height: 24px;
+  padding: 0 3px;
   box-sizing: border-box;
   vertical-align: top;
   flex: 1 1 auto;
@@ -42,25 +43,10 @@
   background-color: #d50000;
   color: #fff;
 }
-#status {
-  width: 100%;
-  padding: 0 12px;
-}
 #subsytemHolder {
   display: flex;
   flex-direction: row;
-}
-#statusRF {
-  padding: 0 3px 0 12px;
-}
-#statusIMU {
-  padding: 0 3px;
-}
-#statusGPS {
-  padding: 0 3px;
-}
-#statusTelemetry {
-  padding: 0 12px 0 3px;
+  padding: 0 9px;
 }
 /* Counter styling */
 .counterSpan {
