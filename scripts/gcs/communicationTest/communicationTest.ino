@@ -29,6 +29,7 @@ void setup() {
   Serial.begin(115200);
   delay(50);
 
+  Serial.print("{ST:SR2;}");
   Serial.print("{LOG:GCS is in startup;}");
 
   // RFM95W reset
@@ -39,9 +40,9 @@ void setup() {
 
   // Check if the RFM95W has intialized.
   if (RF.init()) {
-    Serial.print("{ST:RFActive;}");
+    Serial.print("{ST:RF2;}");
   } else {
-    Serial.print("{ST:RFOffline;}");
+    Serial.print("{ST:RF0;}");
   }
 }
 
