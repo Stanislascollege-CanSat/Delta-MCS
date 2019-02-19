@@ -29,7 +29,7 @@ void setup() {
   Serial.begin(115200);
   delay(50);
 
-  Serial.print("{LOG:GCS in startup;}");
+  Serial.print("{LOG:GCS is in startup;}");
 
   // RFM95W reset
   digitalWrite(RF_RST, LOW);
@@ -39,9 +39,9 @@ void setup() {
 
   // Check if the RFM95W has intialized.
   if (RF.init()) {
-    Serial.print("{RF:1;}");
+    Serial.print("{ST:RFActive;}");
   } else {
-    Serial.print("{RF:0;}");
+    Serial.print("{ST:RFOffline;}");
   }
 }
 
@@ -50,6 +50,7 @@ void loop() {
   Serial.print(rand() % 50);
   Serial.print(";RS:-");
   Serial.print(rand() % 100);
+  Serial.print(";}");
   delay(100);
 
 }
