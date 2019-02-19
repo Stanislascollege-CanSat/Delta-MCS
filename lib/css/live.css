@@ -62,6 +62,10 @@
 #statusTelemetry {
   padding: 0 12px 0 3px;
 }
+/* Counter styling */
+.counterSpan {
+  font-size: inherit;
+}
 /* Chart styling */
 #chartContainer {
   width: 50%;
