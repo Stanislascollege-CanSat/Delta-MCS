@@ -50,9 +50,9 @@
   flex: 1 1 auto;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 16px;
   font-size: 0;
   user-select: none;
+  position: relative;
 }
 /* Icon stylying for titleBar items. */
 .icon {
@@ -67,16 +67,30 @@
 
 /* cornerText */
 #missionData .cornerText {
-  position: relative;
+  position: absolute;
   top: 33px;
   left: -33px;
   line-height: 12px;
   color: var(--mediumGrey);
   transform: rotate(-90deg);
   width: 78px;
+  height: 12px;
   opacity: 0.3;
   letter-spacing: 2px;
   user-select: none;
+  z-index: 2;
+}
+
+/* Controls */
+#controls {
+  position: absolute;
+  width: calc(100% - 128px);
+  height: 32px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 12px -4px #777;
+  border-radius: 16px;
+  bottom: 24px;
+  left: 64px;
 }
 
 /* Tooltip */
@@ -103,12 +117,4 @@
 .tippy-content {
   font-size: 14px;
   color: var(--justGrey);
-}
-
-#innerCanvas {
-  width: 500px;
-  height: 500px;
-  position: fixed;
-  top: 200px;
-  left: 300px;
 }
