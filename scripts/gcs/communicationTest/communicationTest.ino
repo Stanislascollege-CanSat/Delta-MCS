@@ -14,7 +14,7 @@
 #define RF_IRQ 3 // Must be hardware interrupt
 
 // Define variable.
-#define RF95_FREQ 868.0 // Change after decimal for channels
+#define RF_FREQ 868.0 // Change after decimal for channels
 
 // Create Singleton instances
 RH_RF95 RF(RF_CS, RF_IRQ);
@@ -29,8 +29,7 @@ void setup() {
   Serial.begin(115200);
   delay(50);
 
-  Serial.print("{ST:SR2;}");
-  Serial.print("{LOG:GCS is in startup;}");
+  Serial.print("{ST:SR2;LG:GCS is in startup;}");
 
   // RFM95W reset
   digitalWrite(RF_RST, LOW);
@@ -44,6 +43,18 @@ void setup() {
   } else {
     Serial.print("{ST:RF0;}");
   }
+
+  // Defaults after init are 434.0MHz, 13dBm, Bw = 125 kHz, Cr = 4/5, Sf = 128chips/symbol, CRC on
+  // Set RFM95W frequency
+  if (RF.setFrequency(RF_FREQ)) {
+    Serial.print("{ST:FR2;LG:Frequency set to: "); Serial.print(RF_FREQ); Serial.print("MHz;}");
+  } else {
+    Serial.print("{ST:FR0;}");
+  }
+
+   // Set TX transmission power.
+   RF.setTxPower(23, false);
+   Serial.print("{ST:TP2;}");
 }
 
 void loop() {
