@@ -6,7 +6,10 @@
 
 // Inlude libraries
 #include <SPI.h>
+#include <Wire.h>
 #include <RH_RF95.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BMP280.h>
 
 // Define pin connections
 #define RF_CS 4
@@ -18,6 +21,7 @@
 
 // Create Singleton instances
 RH_RF95 RF(RF_CS, RF_IRQ);
+Adafruit_BMP280 bme;
 
 void setup() {
   // Start RFM95W
@@ -25,9 +29,9 @@ void setup() {
   digitalWrite(RF_RST, HIGH);
 
   // Initialize the serial connection.
-   while (!Serial);
+  while (!Serial);
   Serial.begin(115200);
-  delay(50);
+  delay(200);
 
   Serial.print("{STS:2;LG:GCS is in startup;}");
 
@@ -55,6 +59,13 @@ void setup() {
    // Set TX transmission power.
    RF.setTxPower(23, false);
    Serial.print("{STP:2;}");
+
+   // Check if the BMP280 has intialized.
+   if (bme.begin(0x76)) {
+    Serial.print("{STB:2;}");
+   } else {
+    Serial.print("{STB:0;}");
+   }
 }
 
 void loop() {
@@ -62,6 +73,10 @@ void loop() {
   Serial.print(rand() % 50);
   Serial.print(";RS:-");
   Serial.print(rand() % 100);
+  Serial.print(";AP:");
+  Serial.print(bme.readPressure());
+  Serial.print(";AT:");
+  Serial.print(bme.readTemperature());
   Serial.print(";}");
   delay(100);
 
