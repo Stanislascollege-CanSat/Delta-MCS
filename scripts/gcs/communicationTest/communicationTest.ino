@@ -29,7 +29,7 @@ void setup() {
   Serial.begin(115200);
   delay(50);
 
-  Serial.print("{ST:SR2;LG:GCS is in startup;}");
+  Serial.print("{STS:2;LG:GCS is in startup;}");
 
   // RFM95W reset
   digitalWrite(RF_RST, LOW);
@@ -39,22 +39,22 @@ void setup() {
 
   // Check if the RFM95W has intialized.
   if (RF.init()) {
-    Serial.print("{ST:RF2;}");
+    Serial.print("{STR:2;}");
   } else {
-    Serial.print("{ST:RF0;}");
+    Serial.print("{STR:0;}");
   }
 
   // Defaults after init are 434.0MHz, 13dBm, Bw = 125 kHz, Cr = 4/5, Sf = 128chips/symbol, CRC on
   // Set RFM95W frequency
   if (RF.setFrequency(RF_FREQ)) {
-    Serial.print("{ST:FR2;LG:Frequency set to: "); Serial.print(RF_FREQ); Serial.print("MHz;}");
+    Serial.print("{STF:2;LG:Frequency set to: "); Serial.print(RF_FREQ); Serial.print("MHz;}");
   } else {
-    Serial.print("{ST:FR0;}");
+    Serial.print("{STF:0;}");
   }
 
    // Set TX transmission power.
    RF.setTxPower(23, false);
-   Serial.print("{ST:TP2;}");
+   Serial.print("{STP:2;}");
 }
 
 void loop() {
