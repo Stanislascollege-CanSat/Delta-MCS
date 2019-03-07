@@ -57,7 +57,7 @@
       <div id="clock">
         <div class="icon" id="clockIcon" title="Clocks"></div>
         <div id="clockHolder">
-          <div id="clockGPS"><span class="bold clockSpan">Cansat</span> --:--:--</div>
+          <div id="clockGPS"><span class="bold clockSpan">MotherCan</span> --:--:--</div>
           <div id="clockLocal"><span class="bold clockSpan">Local</span> <span id="clockLocalInner">--:--:--</span></div>
         </div>
         <div class="icon" id="missionclockIcon" title="Mission Timer"></div>
@@ -112,7 +112,36 @@
       <div class="cornerText"><h6>MISSION</h6></div>
       <div id="viewContainer"><canvas id="view-3d"></canvas></div>
       <div id=""></div>
-      <div id="controls"></div>
+      <div id="controls">
+        <div class="controlHolder" id="buttonHullOpen">
+          <div class="controlHolderIcon" id="hullOpen"></div>
+          <div class="controlHolderText">Open Hull</div>
+        </div>
+        <div class="controlHolder" id="buttonHullClose">
+          <div class="controlHolderIcon" id="hullClose"></div>
+          <div class="controlHolderText">Close Hull</div>
+        </div>
+        <div class="controlHolder" id="buttonPinsClose">
+          <div class="controlHolderIcon" id="pinsClose"></div>
+          <div class="controlHolderText">Close Pins</div>
+        </div>
+        <div class="controlHolder" id="buttonPinsOpen">
+          <div class="controlHolderIcon" id="pinsOpen"></div>
+          <div class="controlHolderText">Open Pins</div>
+        </div>
+        <div class="controlHolder" id="buttonDeploy">
+          <div class="controlHolderIcon" id="deploy"></div>
+          <div class="controlHolderText">Deploy</div>
+        </div>
+        <div class="controlHolder" id="buttonLocate">
+          <div class="controlHolderIcon" id="locate"></div>
+          <div class="controlHolderText">Locate</div>
+        </div>
+        <div class="controlHolder" id="buttonDownloadData">
+          <div class="controlHolderIcon" id="downloadData"></div>
+          <div class="controlHolderText">Download Data</div>
+        </div>
+      </div>
       <div id="chartContainer"><canvas id="chart-AT"></canvas></div>
       <div id="chartContainer"><canvas id="chart-AP"></canvas></div>
       <div id="chartContainer"><canvas id="chart-AL"></canvas></div>
@@ -129,6 +158,7 @@
 <script src="lib/renderer/controls/OrbitControls.js"></script>
 <script src="lib/renderer/global.js"></script>
 <script src="lib/renderer/data.js"></script>
+<script src="lib/renderer/commands.js"></script>
 <script src="lib/renderer/com.js"></script>
 <script src="lib/renderer/console.js"></script>
 <script src="lib/renderer/parser.js"></script>
