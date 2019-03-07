@@ -87,10 +87,65 @@
   width: calc(100% - 128px);
   height: 32px;
   background-color: #fafafa;
-  box-shadow: 0 2px 12px -4px #777;
+  box-shadow: 0 2px 12px -4px #888;
   border-radius: 16px;
   bottom: 24px;
   left: 64px;
+  display: flex;
+  overflow: hidden;
+}
+.controlHolder {
+  height: 32px;
+  flex: 1 1 auto;
+  justify-content: center;
+  display: flex;
+  transition: background-color 0.2s ease;
+}
+.controlHolder:hover {
+  background-color: #e6e6e6;
+  transition: background-color 0.1s ease;
+}
+.controlHolder:active {
+  background-color: #d9d9d9;
+}
+.controlHolderIcon {
+  width: 32px;
+  height: 32px;
+  flex:;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 24px;
+  background-color: var(--darkGrey);
+}
+#hullOpen {
+  -webkit-mask-image: url(../icons/rotateRight@2.svg);
+}
+#hullClose {
+  -webkit-mask-image: url(../icons/rotateLeft@2.svg);
+}
+#pinsClose {
+  -webkit-mask-image: url(../icons/back@2.svg);
+}
+#pinsOpen {
+  -webkit-mask-image: url(../icons/forward@2.svg);
+}
+#deploy {
+  -webkit-mask-image: url(../icons/deploy@2.svg);
+}
+#locate {
+  -webkit-mask-image: url(../icons/locate@2.svg);
+}
+#downloadData {
+  -webkit-mask-image: url(../icons/download@2.svg);
+}
+.controlHolderText {
+  height: 32px;
+  flex: 0 1 auto;
+  font-size: 12px;
+  padding-left: 6px;
+  color: var(--darkGrey);
+  line-height: 32px;
+  text-align: left;
 }
 
 /* Tooltip */
