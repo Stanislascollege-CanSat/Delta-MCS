@@ -91,8 +91,11 @@
   border-radius: 16px;
   bottom: 24px;
   left: 64px;
-  display: flex;
+  display: none;
   overflow: hidden;
+}
+.controlVisible {
+  display: flex!important;
 }
 .controlHolder {
   height: 32px;
