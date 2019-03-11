@@ -152,6 +152,63 @@
   text-align: left;
 }
 
+/* Control switch */
+.controlSwitchHolder {
+  display: flex;
+  /* width: 256px; */
+  height: 32px;
+  box-sizing: border-box;
+  background-color: var(--darkGrey);
+  border-radius: 16px;
+}
+.controlSwitchText {
+  color: var(--justWhite);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 0 6px;
+}
+.controlSwitch {
+  position: relative;
+  display: inline-block;
+  margin-top: 4px;
+  width: 52px;
+  height: 24px;
+}
+.controlSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.controlSwitchRound {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--WarningBorder);
+  transition: 0.4s;
+  border-radius: 14px;
+}
+.controlSwitchRound:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--justWhite);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .controlSwitchRound {
+  background-color: #00c853;
+}
+input:checked + .controlSwitchRound:before {
+  transform: translateX(26px);
+}
+
 /* Tooltip */
 .tooltips {
   position: absolute;
