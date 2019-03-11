@@ -24,10 +24,9 @@
   display: flex;
 }
 #statusColumn {
-  width: 361px;
+  width: 231px;
   box-sizing: border-box;
   display: flex;
-  flex-flow: column;
   background-color: var(--justGrey);
   border-right: solid 1px var(--borderGrey);
 }
