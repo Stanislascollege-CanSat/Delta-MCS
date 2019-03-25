@@ -43,7 +43,7 @@
   font-size: 11px;
   color: var(--darkGrey);
 }
-#clockLocalInner {
+.clockLocalInner {
   font-size: 11px;
 }
 .clockSpan {

@@ -67,8 +67,8 @@
 /* cornerText */
 #missionData .cornerText {
   position: absolute;
-  top: 33px;
-  left: -33px;
+  top: 44px;
+  left: -20px;
   line-height: 12px;
   color: var(--mediumGrey);
   transform: rotate(-90deg);
