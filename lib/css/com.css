@@ -81,7 +81,7 @@
 }
 #comStatusItem {
   display: inline-block;
-  width: 72px;
+  width: 80px;
   height: 26px;
   -webkit-mask-size: 18px;
   -webkit-mask-position: center left;
@@ -99,6 +99,9 @@
 #comStatusItem .icon.rssi {
   -webkit-mask-image: url(../icons/rssi@2.svg);
   -webkit-mask-size: 15px;
+}
+#data-RS {
+  font-size: 12px;
 }
 #comStatusItem h6 {
   display: inline-block;

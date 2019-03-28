@@ -24,19 +24,11 @@
   border-left: solid 1px var(--borderGrey);
   vertical-align: bottom;
 }
-#batteryHolder .percentage {
-  height: 13px;
-  padding-left: 8px;
-  padding-right: 8px;
-  line-height: 13px;
-  font-size: 11px;
-  color: var(--darkGrey);
-}
 #batteryHolder .voltage {
-  height: 13px;
+  height: 26px;
   padding-left: 8px;
   padding-right: 8px;
-  line-height: 13px;
-  font-size: 11px;
+  line-height: 26px;
+  font-size: 12px;
   color: var(--darkGrey);
 }

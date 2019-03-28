@@ -68,7 +68,6 @@
       <div id="battery">
         <div class="icon" id="batteryIcon" title="Battery"></div>
         <div id="batteryHolder">
-          <div class="percentage"><span id="data-Bpe">--</span>%</div>
           <div class="voltage" id="data-BV">-.--V</div>
         </div>
       </div>
@@ -140,6 +139,48 @@
             </div>
           </div>
         </div>
+        <div class="statusName"><h4>GPS</h4></div>
+          <table id="counterTable">
+            <tr>
+              <th>UTC Time</th>
+              <td id="data-GT"></th>
+            </tr>
+            <tr>
+              <th>Latitude</th>
+              <td id="data-GA"></div>
+            </tr>
+            <tr>
+              <th>Longitude</th>
+              <td id="data-GO"></td>
+            </tr>
+            <tr>
+              <th>Height</th>
+              <td id="data-GH"></td>
+            </tr>
+            <tr>
+              <th>Speed</th>
+              <td id="data-GS"></td>
+            </tr>
+            <tr>
+              <th>Angle</th>
+              <td id="data-GV"></td>
+            </tr>
+            <tr>
+              <th>3D Fix</th>
+              <td id="data-G3"></td>
+            </tr>
+            <tr>
+              <th># Satellites</th>
+              <td id="data-GN"></td>
+            </tr>
+          </table>
+        <div class="statusName"><h4>Time</h4></div>
+          <table id="counterTable">
+            <tr>
+              <th>Time since startup</th>
+              <td id="data-TS"></td>
+            </tr>
+          </table>
       </div>
       <div id="console">
         <div id="consoleText"></div>
@@ -150,16 +191,22 @@
     </div>
     <div id="missionData">
       <div class="cornerText"><h6>MISSION</h6></div>
-      <div id="viewContainer"><canvas id="view-3d"></canvas></div>
+      <!-- <div id="viewContainer"><canvas id="view-3d"></canvas></div> -->
       <div id=""></div>
       <div id="controls">
-        <div class="controlSwitchHolder">
+        <!--<div class="controlSwitchHolder">
           <h4 class="controlSwitchText">Integration</h4>
           <label class="controlSwitch">
             <input type="checkbox" id="switchMode">
             <span class="controlSwitchRound"></span>
           </label>
           <h4 class="controlSwitchText">Flight</h4>
+        </div>-->
+        <div class="controlSwitchHolder statusWarn" id="statusMotherFm">
+          <div class="controlHolder" id="buttonFlightMode">
+            <div class="controlHolderIcon" id="flightMode"></div>
+            <div class="controlHolderText">Set Flight Mode</div>
+          </div>
         </div>
         <div class="controlHolder" id="buttonHullOpen">
           <div class="controlHolderIcon" id="hullOpen"></div>
@@ -181,10 +228,6 @@
           <div class="controlHolderIcon" id="deploy"></div>
           <div class="controlHolderText">Deploy</div>
         </div>
-        <div class="controlHolder" id="buttonLocate">
-          <div class="controlHolderIcon" id="locate"></div>
-          <div class="controlHolderText">Locate</div>
-        </div>
         <div class="controlHolder" id="buttonDownloadData">
           <div class="controlHolderIcon" id="downloadData"></div>
           <div class="controlHolderText">Download Data</div>
@@ -194,17 +237,6 @@
       <div id="chartContainer"><canvas id="chart-AP"></canvas></div>
       <div id="chartContainer"><canvas id="chart-AL"></canvas></div>
       <div id="chartContainer"><canvas id="chart-HM"></canvas></div>
-      <h3>GPS</h3>
-      <h4 id="data-GT"></h4>
-      <h4 id="data-GA"></h4>
-      <h4 id="data-GO"></h4>
-      <h4 id="data-GH"></h4>
-      <h4 id="data-GS"></h4>
-      <h4 id="data-GV"></h4>
-      <h4 id="data-G3"></h4>
-      <h4 id="data-GN"></h4>
-      <h3>Time</h3>
-      <h4 id="data-TS"></h4>
       <h3>IMU</h3>
       <h4 id="data-AX"></h4>
       <h4 id="data-AY"></h4>
