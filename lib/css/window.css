@@ -34,7 +34,7 @@
 }
 #hardwareStatus {
   width: 100%;
-  height: 321px;
+  height: 371px;
   flex: 0 0 auto;
   font-size: 0;
   box-sizing: border-box;
@@ -212,6 +212,13 @@ input:checked + .controlSwitchRound {
 }
 input:checked + .controlSwitchRound:before {
   transform: translateX(26px);
+}
+
+/* Deploy */
+#deployBlock {
+  width: 120px;
+  margin-top: 7px;
+  flex: 0 1 auto!important;
 }
 
 /* Tooltip */

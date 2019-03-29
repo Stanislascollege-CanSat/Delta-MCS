@@ -70,6 +70,8 @@
 /* Counter Table */
 #counterTable {
   width: 50%;
+  box-sizing: border-box;
+  padding-left: 6px;
 }
 #counterTable tbody tr th {
   font-size: 12px;
