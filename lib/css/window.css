@@ -29,6 +29,7 @@
   display: flex;
   background-color: var(--justGrey);
   border-right: solid 1px var(--borderGrey);
+  flex-direction: column;
 }
 #hardwareStatus {
   width: 100%;
