@@ -40,7 +40,7 @@
   color: #fff;
 }
 .statusError {
-  background-color: #d50000;
+  background-color: var(--mediumGrey);
   color: #fff;
 }
 #subsytemHolder {
