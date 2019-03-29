@@ -30,6 +30,7 @@
   background-color: var(--justGrey);
   border-right: solid 1px var(--borderGrey);
   flex-direction: column;
+  flex: 0 0 auto;
 }
 #hardwareStatus {
   width: 100%;
