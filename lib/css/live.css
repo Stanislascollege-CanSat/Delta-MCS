@@ -83,3 +83,21 @@
   text-align: left;
   font-weight: 400;
 }
+
+/* ----[ Number Data Table ]----*/
+#numberData {
+  margin-left: 32px;
+  border: 2px solid var(--borderGrey)!important;
+}
+#numberData, #numberData tr,#numberData th,#numberData td{
+ border: 1px solid var(--justGrey);
+ border-collapse: collapse;
+ min-width: 64px;
+}
+#numberData th {
+  font-weight: 800;
+  background-color: var(--justGrey);
+}
+#numberData td, #numberData th {
+  padding: 3px;
+}
