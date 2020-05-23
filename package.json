@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron .",
     "packageMacOS": "electron-packager . Delta --overwrite --platform=darwin --arch=x64 --icon=lib/icons/mac/icon.icns --out=builds && mv builds/Delta-darwin-x64/Delta.app builds && rm -r builds/Delta-darwin-x64",
-    "rebuild": "electron-rebuild .",
+    "install": "electron-rebuild .",
     "lint": "standard",
     "lintFix": "standard --fix"
   },
@@ -22,17 +22,17 @@
   },
   "homepage": "https://github.com/Stanislascollege-CanSat/Delta#readme",
   "devDependencies": {
-    "electron": "^2.0.18",
-    "electron-packager": "^12.1.12",
-    "electron-rebuild": "^1.10.1",
+    "electron": "^9.0.0",
+    "electron-builder": "^22.6.1",
+    "electron-packager": "^14.2.1",
+    "electron-rebuild": "^1.11.0",
     "standard": "^12.0.1"
   },
   "dependencies": {
     "chart.js": "^2.9.3",
     "chartjs-plugin-streaming": "^1.8.0",
-    "moment": "^2.25.0",
-    "npm": "^6.14.4",
-    "serialport": "^6.2.2",
+    "moment": "^2.26.0",
+    "serialport": "^9.0.0",
     "three": "^0.99.0",
     "tippy.js": "^2.6.0",
     "vanilla-tilt": "^1.7.0"
