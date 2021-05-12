@@ -29,7 +29,7 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "chartjs-plugin-streaming": "^1.8.0",
     "moment": "^2.26.0",
     "serialport": "^9.0.0",
